@@ -7,5 +7,9 @@ public class MessagingApplication {
     public String sayHello() {
         return "Hello From Bridgelabz";
     }
+    @GetMapping("/hello/query")
+    public String fetchName(@RequestParam String name){
+        return "Hello "+name;
+    }
 
 }
